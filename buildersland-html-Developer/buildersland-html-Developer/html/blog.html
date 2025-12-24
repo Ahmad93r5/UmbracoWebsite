@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Builder's Land</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <!-- ======== 4.1. Header section ======== -->
+    <header>
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid justify-content-lg-start justify-content-between">
+          <!-- site logo -->
+          <a href="index.html" class="nav-logo p-0">
+            <figure class="w-100 mb-lg-4">
+              <img src="assets/images/logo.svg" alt="logo">
+            </figure>
+          </a>
+          <!-- navigation button  -->
+          <div class="d-flex gap-4 flex-row-reverse">
+            <div class="d-lg-none d-block">
+              <button class="menu-icon d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- navigation bar manu  -->
+            <div class="d-flex align-items-center justify-content-end gap-lg-5 w-100">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link d-flex gap-1">More<i class="fa-solid fa-angle-down"></i></a>
+
+                    <ul class="dropdown-menu d-flex flex-column gap-3">
+                      <li>
+                        <a href="blog.html" class="dropdown-item active">News and Blogs</a>
+                      </li>
+                      <li>
+                        <a href="single-service.html" class="dropdown-item">Single Service</a>
+                      </li>
+                      <li>
+                        <a href="faq.html" class="dropdown-item">FAQ's</a>
+                      </li>
+                      <li>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                      </li>
+                      <li>
+                        <a href="contact.html" class="dropdown-item">Contact Us</a>
+                      </li>
+                      <li>
+                        <a href="team.html" class="dropdown-item">Team</a>
+                      </li>
+                      <li>
+                        <a href="error.html" class="dropdown-item">404</a>
+                      </li>
+                      <li>
+                        <a href="comingSoon.html" class="dropdown-item">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center justify-content-end gap-3">
+                <div class="search SearchModal" id="SearchModal">
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </div>
+                <hr class="d-lg-block d-none">
+                <div class="d-lg-flex flex-row gap-3 d-none">
+                  <a href="#">
+                    <i class="fa-brands fa-square-behance"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal searchModal w-100 h-100 position-fixed justify-content-center align-items-center">
+          <button class="close-btn d-flex position-absolute" id="closeSearchModal">
+            &times;
+          </button>
+          <div class="position-relative d-flex align-items-center justify-content-cente w-50">
+            <input type="text" placeholder="Search..." name="search" class="w-100">
+            <button class="search-btn d-flex align-items-center justify-content-end position-absolute">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!--===== aside navigation slidebar 1 =====-->
+      <aside>
+        <div id="menuBar" class="menu-bar d-lg-none d-block position-fixed h-100 pt-3">
+          <button class="close-icon d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div>
+            <ul class="menu-bar flex-column justify-content-start align-items-start gap-1 pt-4">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="projects.html" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="testimonial.html" class="nav-link">Testimonials</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="nav-link d-flex gap-1">More<i class="fa-solid fa-angle-down"></i></a>
+
+                <ul class="dropdown-menu d-flex flex-column gap-2">
+                  <li>
+                    <a href="blog.html" class="dropdown-item">News and Blogs</a>
+                  </li>
+                  <li>
+                    <a href="single-service.html" class="dropdown-item">Single Service</a>
+                  </li>
+                  <li>
+                    <a href="faq.html" class="dropdown-item">FAQ's</a>
+                  </li>
+                  <li>
+                    <a href="team.html" class="dropdown-item">Team</a>
+                  </li>
+                  <li>
+                    <a href="error.html" class="dropdown-item">404</a>
+                  </li>
+                  <li>
+                    <a href="comingSoon.html" class="dropdown-item">Coming Soon</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+    </header>
+    <!-- ======== End of 4.1. Header section ======== -->
+    <!-- ======== 4.2. Blog Hero section ======== -->
+    <section class="subpage-Hero blog-hero">
+      <div class="container">
+        <div data-aos="zoom-in" class="d-flex flex-column align-items-center text-center">
+          <h1>News <span>Blogs</span></h1>
+          <h6>HOME/NEWS AND BLOG</h6>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of 4.2. Blog Hero section ======== -->
+    <!-- ======== 4.3. Blogs section ======== -->
+    <section class="Blogs my-auto">
+      <div class="container">
+        <div data-aos="fade-up" class="d-flex flex-column gap-lg-4 gap-3">
+          <div class="d-flex flex-column gap-lg-4 gap-3">
+            <h5 class="mini-heading pb-lg-1">News and Blogs</h5>
+            <div class="d-flex flex-column gap-lg-3 gap-2 pb-md-2">
+              <h2>Get Insights And Much More.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur. Pellen tesque proin pretium amet id duis. Urna
+                scelerisque.Pellentesque proin pretium amet id duis. Urna scelerisque.</p>
+            </div>
+          </div>
+          <div class="row gy-md-5 gy-4">
+            <div class="col-xl-7 col-md-6">
+              <div class="d-flex flex-column gap-3 pb-lg-4">
+                <figure class="w-100">
+                  <img src="assets/images/blogs/blog-2.webp" alt="blog-4" class="w-100">
+                </figure>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>By: Anna Hathway</span>
+                  <span>23-Mar-25</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-6">
+              <div class="d-flex flex-column gap-md-3 gap-2 pb-lg-4">
+                <h2>Radio power generater is being used for heavy mechanical construction</h2>
+                <p class="pb-lg-3 pb-md-0 pb-2">Lorem ipsum dolor sit amet consectetur. Sed a at pellentesque libero
+                  suspendisse turpis. Eget
+                  gravida vitae pulvinar mattis condimentum. Vitae egestas diam ultrices congue tempor feugiat.
+                  Pulvinar egestas vitae scelerisque id habitasse id. Nam sapien placerat pellentesque dis viverra
+                  scelerisque ac convallis at. Pellentesque nunc nibh morbi lacus. Molestie scelerisque orci risus
+                  fermentum arcu. Neque magna est quis venenatis bibendum. Sit magna facilisis id morbi. Purus et
+                  pretium orci tortor quam porttitor. Id sed sed urna sodales. Id leo ut lacinia.</p>
+                <a href="blog.html" class="d-flex align-items-center gap-2">See More <i
+                    class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div data-aos="fade-up" class="d-flex flex-column gap-3 h-100">
+                <figure class="w-100">
+                  <img src="assets/images/blogs/blog-1.webp" alt="blog-1" class="w-100">
+                </figure>
+                <div class="d-flex flex-column gap-3 flex-grow-1">
+                  <div>
+                    <h6 class="pb-3">New Project promises real life solutions</h6>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span>By: Anna Hathway</span>
+                      <span>23-Mar-25</span>
+                    </div>
+                  </div>
+                  <p class="flex-grow-1">Lorem ipsum dolor sit amet consect
+                    len tesque proin pretium amet id duis. Urna scelerisque.Pellentesque proin pretium amet id duis.
+                    Urna
+                    sceleri ellen tesque proin pretium amet id duis. Urna scelerisque.....</p>
+                  <a href="blog.html" class="d-flex align-items-center gap-2">See More <i
+                      class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div data-aos="fade-up" class="d-flex flex-column gap-3 h-100">
+                <figure class="w-100">
+                  <img src="assets/images/blogs/blog-2.webp" alt="blog-2" class="w-100">
+                </figure>
+                <div class="d-flex flex-column gap-3 flex-grow-1">
+                  <div>
+                    <h6 class="pb-3">Revolutionizing Urban Architecture</h6>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span>By: Sophia Reynolds</span>
+                      <span>20-May-25</span>
+                    </div>
+                  </div>
+                  <p class="flex-grow-1">Lorem ipsum dolor sit amet consect
+                    len tesque proin pretium amet id duis. Urna scelerisque.Pellentesque proin pretium amet id duis.
+                    Urna
+                    sceleri ellen tesque proin pretium amet id duis. Urna scelerisque.....</p>
+                  <a href="blog.html" class="d-flex align-items-center gap-2">See More <i
+                      class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div data-aos="fade-up" class="d-flex flex-column gap-3 h-100">
+                <figure class="w-100">
+                  <img src="assets/images/blogs/blog-3.webp" alt="blog-3" class="w-100">
+                </figure>
+                <div class="d-flex flex-column gap-3 flex-grow-1">
+                  <div>
+                    <h6 class="pb-3">Building a Sustainable Future</h6>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <span>By: Daniel Foster</span>
+                      <span>14-Sep-25</span>
+                    </div>
+                  </div>
+                  <p class="flex-grow-1">Lorem ipsum dolor sit amet consect
+                    len tesque proin pretium amet id duis. Urna scelerisque.Pellentesque proin pretium amet id duis.
+                    Urna
+                    sceleri ellen tesque proin pretium amet id duis. Urna scelerisque.....</p>
+                  <a href="blog.html" class="d-flex align-items-center gap-2">See More <i
+                      class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center pt-lg-4">
+              <a href="blog.html" class="hover3">Load More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of 4.3. Blogs section ======== -->
+    <!-- ======== 8.15. Footer section ======== -->
+    <footer>
+      <div class="container">
+        <div class="d-flex flex-column align-items-center gap-md-4 gap-3">
+          <figure>
+            <img src="assets/images/footer-logo.svg" alt="footer-logo">
+          </figure>
+          <div class="d-flex flex-row gap-3 py-2">
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+          </div>
+          <ul class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-items-center">
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Terms and Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">Faqs</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-between">
+            <p>Lorem ipsum dolor sit amet consectr tesque proin pretium amet id duis. Urna scelerisque.</p>
+            <form class="d-flex flex-row align-items-center" id="footerForm">
+              <input type="email" name="email" id="email" placeholder="enter your email" required>
+              <button type="submit" class="hover1" id="open-footerModal">Subscribe</button>
+            </form>
+            <div id="footerModal">
+              <div class="d-flex flex-column align-items-center text-center">
+                <figure>
+                  <img src="assets/images/icons/form-submit-gif.gif" alt="form-gif" class="w-100">
+                </figure>
+                <h2>Details Submitted!</h2>
+                <p class="pt-3 pb-5 px-5 text-center w-100">
+                  Thank you for subscribing to our newsletter.
+                </p>
+                <button id="dismiss-footerModal" class="hover1">
+                  Dismiss
+                </button>
+              </div>
+            </div>
+            <div class="modal-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="Copyright">
+      <div class="container">
+        <div class="my-auto"></div>
+        <div
+          class="d-flex flex-md-row flex-column align-items-center justify-content-between gap-md-0 gap-1 pt-3 text-md-start text-center">
+          <p>Copyright &copy; 2025 Builder’sLand By Evonicmedia. All Rights Reserved.</p>
+          <p>Powered by <span>Evonicsoft</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- ======== End of 8.15. Footer section ======== -->
+  </div>
+
+
+  <!-- bootstrap min javascript -->
+  <script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+  <!-- main javascript -->
+  <script src="assets/js/custom.js"></script>
+  <!-- animation from javascript -->
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 1500,
+    });
+  </script>
+</body>
+</html>

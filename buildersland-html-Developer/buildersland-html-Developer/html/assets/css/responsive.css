@@ -1,0 +1,2017 @@
+/* ======== Global Styling ======== */
+@media screen and (max-width: 992px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 990px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 54px;
+    line-height: 62px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  h4 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  h6 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  a,
+  button {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .mini-heading {
+    padding: 0px 0px 0px 35px;
+  }
+
+  .mini-heading::before {
+    width: 30px;
+  }
+
+  /* form validation modal */
+  #footerModal div {
+    width: 290px;
+  }
+}
+
+/* ======== End of Global Styling ======== */
+/* ========= 1.1. Header section ========= */
+@media screen and (max-width: 1199px) {
+  header .navbar-nav {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  header .flex-row-reverse {
+    width: 28%;
+  }
+
+  .nav-logo img {
+    width: 120px;
+  }
+
+  header li a::after,
+  header .dropdown-item::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-bar {
+    width: 230px;
+  }
+}
+
+/* ========= End of 1.1. Header section ========= */
+/* ========= 1.2. Hero section ========= */
+@media screen and (max-width: 1199px) {
+  .Hero h1 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Hero {
+    padding: 70px 0px 200px;
+  }
+
+  .Hero h1 {
+    width: 66%;
+  }
+
+  .Hero .position-absolute {
+    width: 294px;
+    padding: 20px 12px 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Hero h1 {
+    width: 86%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Hero {
+    padding: 50px 0px 100px;
+  }
+
+  .Hero .flex-sm-row.gap-4 {
+    padding: 35px 0px 20px;
+  }
+
+  .Hero .position-absolute {
+    width: 95%;
+    bottom: -68px;
+    box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  .Hero .position-absolute h3::after {
+    right: -48px;
+    width: 20%;
+  }
+
+  .Hero img {
+    width: 38px;
+  }
+
+  .Hero .position-absolute p {
+    width: 70%;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Hero .position-absolute h3 {
+    width: 75%;
+  }
+
+  .Hero .position-absolute h3::after {
+    width: 19%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Hero .position-absolute h3 {
+    width: 63%;
+  }
+
+  .Hero .position-absolute h3::after {
+    right: 52px;
+    bottom: 8px;
+  }
+
+  .Hero .position-absolute p {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Hero .position-absolute h3 {
+    width: 74%;
+  }
+
+  .Hero .position-absolute p {
+    width: 100%;
+  }
+}
+
+/* ======== 1.3. Hero Cards section ======== */
+@media screen and (max-width: 1399px) {
+  .Hero h1 {
+    width: 78%;
+  }
+
+  .Hero-card p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Hero-card {
+    padding: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Hero-card {
+    padding: 100px 0px 50px;
+  }
+
+  .Hero-card .gap-md-3:hover::before {
+    visibility: hidden;
+  }
+
+  .Hero-card p {
+    width: 65%;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Hero-card p {
+    width: 100%;
+  }
+}
+
+/* ======== 1.3. Hero Cards section ======== */
+/* ========= 1.4. Services section ======== */
+@media screen and (max-width: 1399px) {
+  .Services .gap-lg-3 p {
+    width: 100%;
+  }
+
+  .Services h2 {
+    width: 100%;
+  }
+
+  .Services h3 {
+    width: 58%;
+  }
+
+  .Services .gap-sm-5 p {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Services h3 {
+    width: 72%;
+  }
+
+  .Services .gap-sm-5 p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Services {
+    padding: 70px 0px;
+  }
+
+  .Services h2 {
+    width: 100%;
+  }
+
+  .Services .gap-lg-3 p {
+    width: 80%;
+  }
+
+  .Services h3 {
+    width: 40%;
+  }
+
+  .Services .gap-sm-5 p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Services {
+    padding: 50px 0px;
+  }
+
+  .Services h2 {
+    width: 90%;
+  }
+
+  .Services img {
+    width: 55px;
+  }
+
+  .Services h3 {
+    width: 46%;
+  }
+
+  .Services .gap-lg-3 p {
+    width: 98%;
+  }
+
+  .Services .gap-sm-5 p {
+    width: 98%;
+  }
+
+  .Services .service-number-container {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Services h3 {
+    width: 50%;
+  }
+}
+
+/* ========= End of 1.4. Services section ======== */
+/* =========  1.5. About Us section ======== */
+@media screen and (max-width: 1399px) {
+  .About .position-absolute {
+    left: 0px;
+  }
+
+  .About p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .About {
+    padding: 100px 0px 130px;
+  }
+
+  .About .position-absolute {
+    transform: scale(0.85);
+    bottom: -55px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .About {
+    padding: 70px 0px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .About {
+    padding: 10px 0px 85px;
+  }
+
+  .About .position-absolute,
+  .About .align-items-start {
+    transform: scale(0.75);
+  }
+
+  .About .position-absolute {
+    left: -40px;
+  }
+
+  .About .align-items-start {
+    position: relative;
+    right: -40px;
+  }
+
+  .About h2 {
+    width: 77%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .About {
+    padding: 50px 0px;
+  }
+
+  .About .position-absolute,
+  .About .align-items-start {
+    transform: scale(1);
+  }
+
+  .About .position-absolute {
+    left: 85px;
+    bottom: -45px;
+  }
+
+  .About .align-items-start {
+    right: 85px;
+  }
+
+  .About .h-100 {
+    padding: 45px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .About {
+    padding: 0px 0px 50px;
+  }
+
+  .About .position-relative {
+    margin: -25px 0px;
+  }
+
+  .About .position-absolute {
+    left: -28px;
+    bottom: 0px;
+    transform: scale(0.7);
+  }
+
+  .About .align-items-start {
+    right: -28px;
+    transform: scale(0.7);
+  }
+
+  .About .h-100 {
+    padding: 0px;
+  }
+
+  .About h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .About .position-relative {
+    margin: -50px 0px;
+  }
+
+  .About .position-absolute {
+    left: -60px;
+    transform: scale(0.6);
+  }
+
+  .About .align-items-start {
+    right: -60px;
+    transform: scale(0.6);
+  }
+
+  .About h2 {
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .About .position-relative {
+    margin: -45px 0px;
+  }
+
+  .About .position-absolute {
+    left: -77px;
+    transform: scale(0.5);
+  }
+
+  .About .position-absolute {
+    bottom: -12px;
+  }
+}
+
+/* =========  End of 1.5. About Us section ======== */
+/* ======== 1.6 Our Commitment section ======== */
+@media screen and (max-width: 1399px) {
+  .Commitment .position-absolute {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Commitment {
+    padding: 0px 0px 70px;
+  }
+
+  .Commitment.m-auto {
+    padding: 70px 0px 0px;
+  }
+
+  .Commitment span {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .Commitment .position-absolute {
+    width: 412px;
+    padding: 12px 0px 21px 30px;
+    bottom: 15%;
+  }
+
+  .Commitment .nav-link {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  .Commitment .tab-content li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Commitment .align-items-end {
+    position: absolute;
+    bottom: 34%;
+  }
+
+  .Commitment .d-flex .position-relative {
+    width: 100%;
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Commitment {
+    padding: 0px 0px 50px;
+  }
+
+  .Commitment.m-auto {
+    padding: 50px 0px 0px;
+  }
+
+  .Commitment .align-items-end {
+    bottom: 58%;
+  }
+
+  .Commitment .position-absolute {
+    position: unset !important;
+    width: 100%;
+    padding: 12px 12px 0px;
+  }
+
+  .Commitment .tab-content li {
+    font-size: 13px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Commitment span {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .Commitment .align-items-end {
+    bottom: 63%;
+  }
+
+  .Commitment .d-flex .position-relative {
+    left: 40px;
+    transform: scale(0.8);
+    margin: -38px 0px;
+  }
+
+  .Commitment .nav-link {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Commitment .align-items-end {
+    bottom: 65%;
+  }
+
+  .Commitment .position-absolute {
+    padding: 12px 0px 0px;
+  }
+}
+
+/* ======== End of 1.6 Our Commitment section ======== */
+/* ======== 1.7 Projects section ======== */
+@media screen and (max-width: 1399px) {
+  .Projects h2 {
+    width: 100%;
+  }
+
+  .Projects p {
+    width: 87%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Projects {
+    padding: 70px 0px;
+  }
+
+  .Projects p {
+    width: 100%;
+  }
+
+  .Projects i {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Projects p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Projects {
+    padding: 50px 0px;
+  }
+
+  .Projects i {
+    font-size: 35px;
+  }
+
+  .Projects h6 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Projects .position-relative {
+    transform: scale(0.8);
+    margin: -42px 0px;
+  }
+
+  .Projects p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .Projects .position-relative {
+    margin: -36px 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Projects .position-relative {
+    margin: -16px 0px;
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Projects .position-relative {
+    margin: -13px 0px;
+  }
+}
+
+/* ======== End of 1.7. Projects section ======== */
+/* ======== 1.8. Experience section ======== */
+@media screen and (max-width: 991px) {
+  .Experience {
+    padding: 70px 0px;
+  }
+
+  .Experience p {
+    width: 78%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Experience {
+    padding: 50px 0px;
+  }
+
+  .Experience p {
+    width: 100%;
+  }
+}
+
+/* ======== End of 1.8. Experience section ======== */
+/* ======== 1.9. FAQ's section ======== */
+@media screen and (max-width: 1399px) {
+  .Faq {
+    padding: 0px 0px 150px;
+  }
+
+  .Faq figure.position-relative {
+    left: 65px;
+  }
+
+  .Faq .position-absolute {
+    bottom: -60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .Faq img[alt="faq-1"],
+  .Faq img[alt="faq-2"] {
+    transform: scale(0.9);
+  }
+
+  .Faq figure.position-relative {
+    left: -20px;
+  }
+
+  .Faq .position-absolute {
+    right: -21px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Faq {
+    padding: 0px 0px 270px;
+  }
+
+  .Faq img[alt="faq-1"],
+  .Faq img[alt="faq-2"] {
+    transform: scale(1);
+  }
+
+  .Faq figure.position-relative {
+    left: 170px;
+    top: 0px;
+  }
+
+  .Faq .position-absolute {
+    right: 170px;
+    bottom: -200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Faq figure.position-relative {
+    left: 80px;
+  }
+
+  .Faq .position-absolute {
+    right: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Faq {
+    padding: 0px 0px 170px;
+  }
+
+  .Faq .accordion-body {
+    padding: 0px 15px 18px;
+  }
+
+  .Faq .col-xl-7 div.position-relative {
+    transform: scale(0.7);
+  }
+
+  .Faq img[alt="faq-1"],
+  .Faq img[alt="faq-2"] {
+    margin: -50px 0px;
+  }
+
+  .Faq figure.position-relative {
+    left: -60px;
+  }
+
+  .Faq .position-absolute {
+    right: -60px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .Faq img[alt="faq-1"],
+  .Faq img[alt="faq-2"] {
+    margin: -45px 0px;
+  }
+
+  .Faq figure.position-relative {
+    left: -75px;
+  }
+
+  .Faq .position-absolute {
+    right: -75px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .Faq img[alt="faq-1"],
+  .Faq img[alt="faq-2"] {
+    margin: -38px 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Faq figure.position-relative {
+    left: -62px;
+  }
+
+  .Faq .position-absolute {
+    right: -62px;
+    bottom: -188px;
+  }
+}
+
+/* ======== End of 1.9. FAQ's section ======== */
+/* ======== 1.10. Build section ======== */
+@media screen and (max-width: 1399px) {
+  .Build p {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Build p {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Build {
+    padding: 70px 0px;
+  }
+
+  .Build .gap-lg-4 {
+    padding: 0px 0px 0px 20px;
+  }
+
+  .Build p {
+    width: 61%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Build p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Build {
+    padding: 50px 0px;
+  }
+
+  .Build .gap-lg-4 {
+    padding: 0px;
+  }
+
+  .Build p {
+    width: 100%;
+  }
+}
+
+/* ======== End of 1.10. Build section ======== */
+/* ======== 1.11. Testimonials section ======== */
+@media screen and (max-width: 1399px) {
+  .Testimonials .flex-sm-row p {
+    width: 91%;
+  }
+
+  .Testimonials .slick-prev::before {
+    left: 436px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 436px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Testimonials {
+    padding: 100px 0px 182px;
+  }
+
+  .Testimonials .flex-sm-row p {
+    width: 100%;
+  }
+
+  .Testimonials .slick-prev::before {
+    left: 345px;
+    top: 160px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 345px;
+    top: 160px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .Testimonials {
+    padding: 70px 0px 132px;
+  }
+
+  .Testimonials .flex-sm-row p {
+    width: 86%;
+  }
+
+  .Testimonials span,
+  .Testimonials .flex-sm-row p {
+    font-size: 14px;
+  }
+
+  .Testimonials .slick-prev::before {
+    left: 360px;
+    top: 255px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 360px;
+    top: 255px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .Testimonials .gap-lg-4 p {
+    width: 100%;
+  }
+
+  .Testimonials .flex-sm-row p {
+    width: 86%;
+  }
+
+  .Testimonials .slick-prev::before {
+    left: 250px;
+    top: 175px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 250px;
+    top: 175px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .Testimonials {
+    padding: 50px 0px 105px;
+  }
+
+  .Testimonials span,
+  .Testimonials .flex-sm-row p {
+    font-size: 13px;
+    width: 100%;
+
+  }
+
+  .Testimonials .slick-prev::before {
+    left: 126px;
+    top: 340px;
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 100px;
+    top: 340px;
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .Testimonials .slick-prev::before {
+    left: 101px;
+    top: 312px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 71px;
+    top: 312px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .Testimonials .slick-prev::before {
+    left: 76px;
+    top: 292px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 46px;
+    top: 292px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .Testimonials .slick-prev::before {
+    left: 70px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 36px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .Testimonials .slick-prev::before {
+    left: 52px;
+    top: 272px;
+  }
+
+  .Testimonials .slick-next:before {
+    right: 15px;
+    top: 272px;
+  }
+}
+
+/* ======== End of 1.11. Testimonials section ======== */
+/* ======== 1.12. Partners section ======== */
+@media screen and (max-width:991px) {
+  .Partners {
+    padding: 70px 0px;
+  }
+
+  .Partners img[alt="partnerslogo-1"] {
+    width: 120px;
+  }
+
+  .Partners img[alt="partnerslogo-2"] {
+    width: 115px;
+  }
+
+  .Partners img[alt="partnerslogo-3"] {
+    width: 121px;
+  }
+
+  .Partners img[alt="partnerslogo-4"] {
+    width: 140px;
+  }
+
+  .Partners img[alt="partnerslogo-5"] {
+    width: 81px;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .Partners {
+    padding: 50px 0px;
+  }
+
+  .Partners img[alt="partnerslogo-1"] {
+    width: 100px;
+  }
+
+  .Partners img[alt="partnerslogo-2"] {
+    width: 95px;
+  }
+
+  .Partners img[alt="partnerslogo-3"] {
+    width: 100px;
+  }
+
+  .Partners img[alt="partnerslogo-4"] {
+    width: 120px;
+  }
+
+  .Partners img[alt="partnerslogo-5"] {
+    width: 70px;
+  }
+}
+
+/* ======== End of 1.12. Partners section ======== */
+/* ======== 1.13. Our Team section ======== */
+@media screen and (max-width: 1399px) {
+  .Team .position-absolute {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Team .row .gap-4 {
+    height: 326px;
+  }
+
+  .Team.my-auto p {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Team {
+    padding: 70px 0px;
+  }
+
+  .Team span {
+    font-size: 14px;
+  }
+
+  .Team .row .gap-4 {
+    height: 415px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Team p {
+    width: 100%;
+  }
+
+  .Team .row .gap-4 {
+    height: 335px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Team {
+    padding: 50px 0px;
+  }
+
+  .Team span {
+    font-size: 13px;
+  }
+
+  .Team .row .gap-4 {
+    height: 100%;
+  }
+
+  .Team.my-auto p {
+    width: 100%;
+  }
+}
+
+/* ======== End of 1.13. Our Team section ======== */
+/* ======== 1.14. Blogs section ======== */
+@media screen and (max-width: 1199px) {
+  .Blogs .pb-2 p {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Blogs {
+    padding: 0px 0px 70px;
+  }
+
+  .Blogs .justify-content-between {
+    padding: 10px 10px 10px 0px;
+  }
+
+  .Blogs .pb-2 p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Blogs {
+    padding: 0px 0px 50px;
+  }
+
+  .Blogs .pb-2 p {
+    width: 100%;
+  }
+
+  .Blogs span {
+    font-size: 13px;
+  }
+}
+
+/* ======== End of 1.14. Blogs section ======== */
+/* ======== 1.15. Footer section ======== */
+@media screen and (max-width: 1399px) {
+  footer .justify-content-between {
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  footer .justify-content-between {
+    width: 91%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer .flex-row.gap-3 a {
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer img {
+    width: 140px;
+  }
+
+  footer .justify-content-between {
+    width: 74%;
+  }
+
+  footer menu li{
+    padding: 0px;
+  }
+
+  .Copyright p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .justify-content-between {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .nav-link {
+    padding: 8px 14px;
+  }
+
+  footer p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer menu li {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer img {
+    width: 130px;
+  }
+
+  footer input[type="email"] {
+    font-size: 12px;
+  }
+
+  footer input[type="email"]::placeholder {
+    font-size: 12px;
+  }
+
+  footer .hover1 {
+    padding: 7px 12px 6px;
+  }
+
+  .Copyright {
+    padding: 12px 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer input[type="email"] {
+    padding: 9px 20px 9px 8px;
+  }
+}
+
+/* ======== End of 1.15. Footer section ======== */
+/* ======== 2.2. Subpages Hero section ======== */
+@media screen and (max-width: 991px) {
+  .subpage-Hero {
+    padding: 70px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subpage-Hero {
+    padding: 50px 0px;
+  }
+}
+
+/* ======== End of 2.2. Subpages Hero section ======== */
+/* ======== 2.5. Our Story section ======== */
+@media screen and (max-width: 1399px) {
+  .Our-story h2 {
+    width: 71%;
+  }
+
+  .Our-story p {
+    width: 81%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Our-story h2 {
+    width: 85%;
+  }
+
+  .Our-story p {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Our-story {
+    padding: 70px 0px;
+  }
+
+  .Our-story h2 {
+    width: 100%;
+  }
+
+  .Our-story p {
+    width: 84%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Our-story h2 {
+    width: 100%;
+  }
+
+  .Our-story p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Our-story {
+    padding: 50px 0px;
+  }
+}
+
+/* ======== End of 2.5. Our Story section ======== */
+/* ======== 2.6. Choose Us section ======== */
+@media screen and (max-width: 1399px) {
+  .Choose-us h2 {
+    width: 100%;
+  }
+
+  .Choose-us .pb-1 p {
+    width: 77%;
+  }
+
+  .Choose-us .accordion-body p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Choose-us .pb-1 p {
+    width: 92%;
+  }
+
+  .Choose-us .accordion-item {
+    padding: 0px 0px 0px 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Choose-us {
+    padding: 70px 0px;
+  }
+
+  .Choose-us .accordion-item {
+    padding: 0px 0px 0px 65px;
+  }
+
+  .Choose-us h2 {
+    width: 92%;
+  }
+
+  .Choose-us .accordion-button {
+    font-size: 18px;
+  }
+
+  .Choose-us .accordion-body p {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Choose-us {
+    padding: 50px 0px;
+  }
+
+  .Choose-us h2 {
+    width: 100%;
+  }
+
+  .Choose-us .pb-1 p {
+    width: 100%;
+  }
+
+  .Choose-us .accordion-item {
+    padding: 0px 0px 0px 40px;
+  }
+
+  .Choose-us .accordion-button {
+    padding: 14px 15px;
+    font-size: 16px;
+  }
+
+  .Choose-us .accordion-body {
+    padding: 0px 20px 22px 16px;
+  }
+
+  .Choose-us .accordion-body p {
+    width: 100%;
+  }
+}
+
+/* ======== End of 2.6. Choose Us section ======== */
+/* ======== 3.3. Contact Us section ======== */
+@media screen and (max-width: 1399px) {
+  .Contact-us h2 {
+    width: 85%;
+  }
+
+  .Contact-us p {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .Contact-us input,
+  .Contact-us select {
+    width: 100%;
+  }
+
+  .Contact-us input,
+  .Contact-us select {
+    margin: 0px 0px 6px;
+  }
+
+  .Contact-us textarea {
+    margin: 0px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Contact-us {
+    padding: 70px 0px;
+  }
+
+  .Contact-us label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Contact-us {
+    padding: 50px 0px;
+  }
+
+  .Contact-us h2 {
+    width: 100%;
+  }
+
+  .Contact-us form {
+    width: 100%;
+  }
+
+  .Contact-us input,
+  .Contact-us select,
+  .Contact-us textarea,
+  .Contact-us input::placeholder,
+  .Contact-us select::placeholder,
+  .Contact-us textarea::placeholder {
+    font-size: 13px;
+  }
+}
+
+/* ======== End of 3.3. Contact Us section ======== */
+/* ======== 3.4. Find Us section ======== */
+@media screen and (max-width: 1399px) {
+  .Find-us h2 {
+    width: 100%;
+  }
+
+  .Find-us p {
+    width: 96%;
+  }
+
+  .Find-us iframe {
+    width: 242px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Find-us p {
+    width: 100%;
+  }
+
+  .Find-us iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Find-us {
+    padding: 70px 0px;
+  }
+
+  .Find-us .gap-lg-5 {
+    width: 100%;
+  }
+
+  .Find-us .flex-sm-row .gap-3:nth-child(1),
+  .Find-us .flex-sm-row div:nth-last-child(1) {
+    width: 50%;
+  }
+
+  .Find-us h2 {
+    width: 80%;
+  }
+
+  .Find-us p {
+    width: 92%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Find-us {
+    padding: 50px 0px;
+  }
+
+  .Find-us h2 {
+    width: 100%;
+  }
+
+  .Find-us p {
+    width: 98%;
+  }
+
+  .Find-us .flex-sm-row .gap-3:nth-child(1),
+  .Find-us .flex-sm-row div:nth-last-child(1) {
+    width: 100%;
+  }
+
+  .Find-us .pt-1 a span {
+    font-size: 12px;
+  }
+}
+
+/* ======== End of 3.4. Find Us section ======== */
+/* ======== 4.3. Blogs section ======== */
+@media screen and (max-width: 1399px) {
+  .Blogs.my-auto .pb-2 p {
+    width: 87%;
+  }
+
+  .Blogs.my-auto .col-xl-5 p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Blogs.my-auto .pb-md-2 p {
+    width: 93%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Blogs.my-auto {
+    padding: 70px 0px;
+  }
+
+  .Blogs.my-auto .pb-md-2 p {
+    width: 82%;
+  }
+
+  .Blogs.my-auto .col-xl-7 .justify-content-between {
+    padding: 15px 3px 15px 0px;
+  }
+
+  .Blogs.my-auto span {
+    font-size: 14px;
+  }
+
+  .Blogs.my-auto h2 {
+    width: 100%;
+  }
+
+  .Blogs.my-auto .col-xl-5 p {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Blogs.my-auto {
+    padding: 50px 0px;
+  }
+
+  .Blogs.my-auto .pb-md-2 p {
+    width: 100%;
+  }
+
+  .Blogs.my-auto .col-xl-7 .justify-content-between {
+    padding: 10px 3px 10px 0px;
+  }
+
+  .Blogs.my-auto span {
+    font-size: 13px;
+  }
+}
+
+/* ======== End of 4.3. Blogs section ======== */
+/* ======== 5.3. Services section ========  */
+@media screen and (max-width: 1399px) {
+  .Services.my-auto .col-lg-4 p {
+    width: 88%;
+  }
+
+  .Services.my-auto h3 {
+    width: 55%;
+}
+}
+
+@media screen and (max-width: 1199px) {
+  .Services.my-auto h3 {
+    width: 66%;
+  }
+
+  .Services.my-auto .gap-lg-3 p {
+    width: 78%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Services.my-auto {
+    padding: 70px 0px;
+  }
+
+  .Services.my-auto .gap-lg-4 {
+    padding: 0px 0px 45px;
+  }
+
+  .Services.my-auto h3 {
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Services.my-auto h3 {
+    width: 47%;
+  }
+
+  .Services h2 {
+    width: 94%;
+  }
+
+  .Services.my-auto .gap-lg-3 p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Services.my-auto {
+    padding: 50px 0px;
+  }
+
+  .Services.my-auto .gap-lg-4 {
+    padding: 0px 0px 20px;
+  }
+
+  .Services.my-auto h3 {
+    width: 32%;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .Services.my-auto h3 {
+      width: 41%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Services.my-auto h3 {
+      width: 48%;
+  }
+}
+
+/* ======== End of 5.3. Services section ========  */
+/* ======== 6.3. Single Services section ======== */
+@media screen and (max-width: 1399px) {
+  .Single-service .col-lg-7 p {
+    width: 100%;
+  }
+
+  .Single-service .gap-lg-4 p {
+    width: 100%;
+  }
+
+  .You-get h3 {
+    width: 77%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .You-get h3 {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Single-service {
+    padding: 70px 0px 30px;
+  }
+
+  .Single-service .col-lg-5 figure {
+    padding: 28px;
+  }
+
+  .Single-service .col-lg-5 img {
+    width: 40px;
+  }
+
+  .You-get .position-relative {
+    padding: 54px 0px 0px 30px;
+  }
+
+  .You-get h3::before {
+    height: 66px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Single-service .col-lg-5 figure {
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Single-service {
+    padding: 50px 0px 30px;
+  }
+
+  .Single-service .col-lg-5 img {
+    width: 34px;
+  }
+
+  .You-get .position-relative {
+    padding: 34px 0px 0px 18px;
+  }
+
+  .You-get h3 {
+    width: 100%;
+  }
+
+  .You-get h3::before {
+    height: 58px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .You-get h3::before {
+    height: 78px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .You-get h3::before {
+    height: 98px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .You-get h3::before {
+    height: 118px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .You-get h3::before {
+    height: 136px;
+  }
+}
+
+/* ======== End of 6.3. Single Services section ======== */
+/* ======== 6.4. You will Get section ======== */
+@media screen and (max-width: 991px) {
+  .You-get {
+    padding: 0px 0px 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .You-get {
+    padding: 0px 0px 50px;
+  }
+
+  .You-get i {
+    font-size: 22px;
+  }
+}
+
+/* ======== End of 6.4. You will Get section ======== */
+/* ======== 7.3. FAQ's section ======== */
+@media screen and (max-width: 1399px) {
+  .Faq.my-auto .position-absolute {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Faq.my-auto .position-absolute {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Faq.my-auto {
+    padding: 70px 0px 0px;
+  }
+
+  .Faq.my-auto img {
+    width: 80px;
+  }
+
+  .Faq.my-auto .accordion-item p {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Faq.my-auto {
+    padding: 50px 0px 0px;
+  }
+
+  .Faq.my-auto .accordion {
+    width: 100%;
+  }
+
+  .Faq.my-auto .position-absolute {
+    right: 0px;
+    top: 12px;
+  }
+
+  .Faq.my-auto img {
+    width: 60px;
+  }
+
+  .Faq .accordion-button {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  .Faq .accordion-body {
+    padding: 0px 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Faq.my-auto h2 {
+    width: 78%;
+  }
+
+  .Faq.my-auto .position-absolute {
+    top: 35px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .Faq.my-auto .position-absolute {
+    top: 65px;
+  }
+}
+
+/* ======== End of 7.3. FAQ's section ======== */
+/* ======== 8.4. Feedback section ======== */
+@media screen and (max-width: 1399px) {
+  .Feedback textarea {
+    width: 100%;
+  }
+
+  .Feedback form button {
+    width: 100%;
+  }
+
+  .Feedback.my-auto h2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Feedback {
+    padding: 0px 0px 70px;
+  }
+
+  .Feedback .gap-md-3 {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Feedback .gap-md-3 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Feedback {
+    padding: 0px 0px 50px;
+  }
+}
+
+/* ======== End of 8.4. Feedback section ======== */
+/* ======== 9.3. Project section ======== */
+@media screen and (max-width: 1399px) {
+  .Projects.my-auto h2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Projects.my-auto .gap-lg-4 {
+    padding: 0px 0px 40px;
+  }
+
+  .Projects.my-auto .align-items-center {
+    padding: 40px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Projects.my-auto .gap-lg-4 {
+    padding: 0px 0px 20px;
+  }
+
+  .Projects.my-auto h2 {
+    width: 100%;
+  }
+
+  .Projects.my-auto .row p {
+    font-size: 13px;
+  }
+}
+
+/* ======== End of 9.3. Project section ======== */
+/* ======== 11.1. Error 404 section ======== */
+@media screen and (max-width: 991px) {
+  .Error h1 {
+    font-size: 200px;
+    line-height: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Error {
+    padding: 50px 0px;
+  }
+
+  .Error h1 {
+    font-size: 120px;
+    line-height: 115px;
+  }
+
+  .Error p {
+    width: 87%;
+  }
+
+  .Error h1.position-relative {
+    bottom: -46px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Error h1 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .Error p {
+    width: 95%;
+  }
+
+  .Error h1.position-relative {
+    bottom: -38px;
+  }
+}
+
+/* ======== End of 11.1. Error 404 section ======== */
+/* ======== 12.1. Coming Soon section ======== */
+@media screen and (max-width: 1199px) {
+  .Coming-soon.Error h1 {
+    font-size: 138px;
+    line-height: 158px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Coming-soon.Error h1 {
+    font-size: 105px;
+    line-height: 140px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Coming-soon.Error h1 {
+    font-size: 55px;
+    line-height: 96px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .Coming-soon.Error h1 {
+    font-size: 42px;
+    line-height: 75px;
+  }
+}
+
+/* ======== End of 12.1. Coming Soon section ======== */

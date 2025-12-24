@@ -1,0 +1,2071 @@
+/* import font family is == DM Sans ==*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+/*
+Theme Name:     Builder's Land
+Theme URI:
+Author:
+Author URI:
+Description:
+Version:        1.0
+
+
+License:
+License URI:
+
+ [Table of Content]
+ 01. Reset
+ 02. Global Style
+	  01. Index Page Style
+        section Index Page
+            1.1. Header section
+            1.2. Hero section
+            1.3. Hero-card section
+            1.4. Services section
+            1.5. About Us section
+            1.6. Our Commitment section
+            1.7. Projects section
+            1.8. Experience section
+            1.9. FAQ's section
+            1.10. Build section
+            1.11. Testimonials section
+            1.12. Partners section
+            1.13. Our Team Section
+            1.14. Blogs Section
+            1.15. Footer Section
+
+    02. About Page Style
+        section About Page
+            2.2. Subpage-Hero section
+            2.3. About Us section
+			2.4. Experience section
+			2.5. Our Story section
+
+    03. Contact Page Style
+        section Services Page
+            3.3. Contact-Us section
+            3.4. Find-Us section
+
+    04. Blog Page Style
+        section Blog Page
+            4.3. Blogs section
+
+    05. Services Page Style
+        section Services Page
+            5.3. Services section
+            5.4. Build section
+            5.5. Contact US section
+
+    06. Single Service Page Style
+        section Single Services Page
+            6.3. Single-service section
+            6.4. You Will Get section
+            6.5. Build section
+
+    07. FAQ's Page Style
+        section FAQ's Page
+            7.3. FAQ section
+            7.4. Contact us section
+            7.5. Feedback section
+
+    08. Testimonials Page Style
+		    section Testimonials Page
+			     8.3. Testimonials section
+			     8.4. Feedback section
+
+    09. Projects Page Style
+		    section Projects Page
+				  9.3. Projects section
+
+    10. Team Page Style
+		    section Team Page
+				  10.3. Team section
+
+    11. Error Page Style
+		      section Error Page
+				    11.1. Error section
+
+    12. ComingSoon Page Style
+		    section ComingSoon Page
+				  12.1. ComingSoon section
+ */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* =====  01. Reset  ====== */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "Space-Grotesk", sans-serif;
+  line-height: 1;
+  background: #ffffff;
+  color: #141414;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: #ffffff;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+label {
+  font-weight: normal;
+}
+
+iframe {
+  width: 100%;
+}
+
+/* =====  End of 01. Reset  ====== */
+/* ===== 02. Global Style ===== */
+h1 {
+  font-size: 74px;
+  line-height: 82px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 35px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h4 {
+  font-size: 46px;
+  line-height: 58px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #ffff;
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  padding: 14px 54px;
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  outline: none;
+}
+
+.mini-heading {
+  color: #FF9900;
+  position: relative;
+  padding: 0px 0px 0px 65px;
+  width: fit-content;
+}
+
+.mini-heading::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 2px;
+  background-color: #FF9900;
+  left: 0px;
+  bottom: 50%;
+}
+
+.hover1 {
+  color: #ffffff;
+  transition: ease all 0.3s;
+  text-align: center;
+  padding: 14px 54px;
+  background-color: #FF9900;
+  display: inline-block;
+}
+
+.hover1:hover {
+  color: #FF9900;
+  background-color: #ffff;
+}
+
+.hover1:active {
+  filter: brightness(0.8);
+}
+
+.hover2 {
+  width: fit-content;
+  color: #141414;
+  background-color: #ffff;
+  padding: 14px 54px;
+  transition: ease all 0.3s;
+  display: inline-block;
+}
+
+.hover2:hover {
+  color: #ffffff;
+  background-color: #FF9900;
+}
+
+.hover2:active {
+  filter: brightness(0.8);
+}
+
+.hover3 {
+  width: fit-content;
+  color: #141414;
+  border: 1px solid #141414;
+  padding: 14px 54px;
+  transition: ease all 0.3s;
+  display: inline-block;
+}
+
+.hover3:hover {
+  color: #ffffff;
+  background-color: #141414;
+}
+
+.hover3:active {
+  filter: brightness(0.8);
+}
+
+.hover4 {
+  width: fit-content;
+  color: #ffff;
+  padding: 14px 54px;
+  transition: ease all 0.3s;
+  display: inline-block;
+  background-color: #141414;
+}
+
+.hover4:hover {
+  color: #ffffff;
+  background-color: #FF9900;
+}
+
+.hover4:active {
+  filter: brightness(0.8);
+}
+
+/* form validation modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+#footerModal.active+.modal-overlay,
+#ContactModal.active+.modal-overlay,
+#FeedbackModal.active+.modal-overlay {
+  display: block;
+}
+
+#footerModal,
+#ContactModal,
+#FeedbackModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#footerModal.active,
+#ContactModal.active,
+#FeedbackModal.active {
+  display: block;
+}
+
+#footerModal div,
+#ContactModal div,
+#FeedbackModal div {
+  width: 350px;
+  padding: 30px 0px;
+  border-radius: 20px;
+  background: #141414;
+  color: #ffff;
+}
+
+#footerModal figure,
+#ContactModal figure,
+#FeedbackModal figure {
+  width: fit-content;
+}
+
+#footerModal button,
+#ContactModal button,
+#FeedbackModal button {
+  padding: 8px 16px;
+}
+
+/* ===== End of 02. Global Style ===== */
+/* ========= 1.1. Header section ======== */
+.nav-logo img {
+  width: 147px;
+}
+
+nav a {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+header .navbar-nav {
+  gap: 38px;
+  padding: 0px 0px 0px 85px;
+}
+
+header .flex-row-reverse {
+  width: 100%;
+}
+
+header li {
+  width: fit-content;
+}
+
+.navbar a,
+header nav .gap-1:focus {
+  color: #141414;
+}
+
+header .nav-link,
+header .dropdown-item {
+  position: relative;
+}
+
+header li a::after,
+header .dropdown-item::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #FF9900;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+header li a::after {
+  bottom: 3px;
+}
+
+.navbar a:hover,
+header nav .gap-1:hover,
+header aside .nav-link:hover,
+header aside .nav-link.gap-1:hover,
+.navbar a.active {
+  color: #FF9900;
+  transition: all 0.3s ease-in;
+}
+
+header li a:hover::after,
+header li a.active::after {
+  width: 100%;
+}
+
+header .dropdown menu {
+  width: 200px;
+}
+
+header .nav-link.gap-1 {
+  line-height: 14px;
+}
+
+header .dropdown-menu {
+  padding: 20px 10px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  visibility: hidden;
+  border-radius: 10px;
+}
+
+header .dropdown-item:focus,
+header .dropdown-item:hover,
+header .dropdown-item.active {
+  background-color: transparent;
+  color: #FF9900;
+}
+
+
+header .modal {
+  display: none;
+  z-index: 1000;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(7px);
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+header .searchModal .close-btn {
+  top: 20px;
+  right: 30px;
+  background: none;
+  color: #ffffff;
+  font-size: 50px;
+  padding: 0px;
+}
+
+header .searchModal .position-relative {
+  transform: translateY(-400%);
+  transition: transform 0.7s ease-in-out;
+}
+
+header .modal.show .position-relative {
+  transform: translateY(0);
+}
+
+header .searchModal input::placeholder {
+  color: #ffffff;
+}
+
+header .searchModal input {
+  padding: 20px;
+  outline: none;
+  background: #150c2380;
+  color: #ffffff;
+  border: 1px solid #ffff;
+  border-radius: 10px;
+}
+
+header .close-btn:hover,
+header .search-btn:hover i {
+  color: #FF9900;
+}
+
+header .search-btn {
+  border: none;
+  background: none;
+  padding: 0px;
+  top: 20px;
+  right: 20px;
+}
+
+header .search-btn i {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+header nav .fa-search {
+  font-size: 20px;
+}
+
+header nav hr {
+  height: 45px !important;
+  width: 2px;
+  color: #141414;
+}
+
+/*====== aside navigation slidebar ======*/
+.menu-bar {
+  right: -100%;
+  height: 100vh;
+  top: 0px;
+  width: 300px;
+  z-index: 50;
+  background: #ffff;
+  transition: right 0.8s ease;
+  overflow-y: auto;
+}
+
+.menu-bar.active {
+  right: 0px;
+}
+
+header nav .fa-brands {
+  font-size: 22px;
+}
+
+header .menu-icon {
+  background: transparent;
+  border-radius: 8px;
+  height: 38px;
+  width: 38px;
+  color: #fff;
+  background-color: #FF9900;
+  padding: 0px;
+}
+
+header .menu-icon i {
+  font-size: 16px;
+}
+
+.menu-bar .close-icon {
+  width: 38px;
+  height: 38px;
+  font-size: 36px;
+  padding: 0px;
+  margin: 0px 0px 0px 10px;
+  border: 1px solid #FF9900;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #FF9900;
+}
+
+.menu-bar .close-icon i {
+  font-size: 24px;
+}
+
+.menu-bar a,
+.menu-bar .nav-link.gap-1 {
+  color: #141414;
+  transition: all 0.3s ease-in;
+}
+
+.menu-bar a {
+  font-size: 14px;
+}
+
+.menu-bar ul li a:focus {
+  color: #ffffff;
+}
+
+.menu-bar .dropdown-menu {
+  background: #ffff;
+  padding: 10px;
+  z-index: 100;
+  border: 0px;
+}
+
+/* ========= End of 1.1 Header section ======== */
+/* ========= 1.2. Hero section ======== */
+.Hero {
+  background-image: url("../images/bg/herobg-1.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 100px 0px 176px;
+  color: #ffff;
+}
+
+.Hero h1 {
+  width: 58%;
+}
+
+.Hero h1 span {
+  color: #FF9900;
+}
+
+.Hero .flex-sm-row.gap-4 {
+  padding: 35px 0px 0px;
+}
+
+.Hero .gap-4 a:nth-child(2) {
+  transition: all 0.3s ease-in-out;
+}
+
+.Hero .gap-4 a:nth-child(2)::after {
+  content: "";
+  background-color: #ffff;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Hero .gap-4 a:nth-child(2):hover::after {
+  width: 0%;
+  background-color: #FF9900;
+}
+
+.Hero .gap-4 a:nth-child(2):hover {
+  color: #FF9900;
+}
+
+.Hero .position-absolute {
+  background-color: #ffff;
+  color: #141414;
+  bottom: 0px;
+  padding: 20px 12px 42px;
+  width: 325px;
+}
+
+.Hero .position-absolute h3 {
+  width: 67%;
+  padding: 0px 0px 0px 20px;
+}
+
+.Hero .position-absolute h3::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: -55px;
+  width: 25%;
+  height: 2px;
+  background-color: #141414;
+}
+
+.Hero .position-absolute p {
+  font-size: 14px;
+}
+
+.Hero figure {
+  width: fit-content;
+}
+
+.Hero img {
+  width: 48px;
+}
+
+/* ========= End of 1.2. Hero section ======== */
+/* ========= End of 1.3. Hero Cards section ======== */
+.Hero-card {
+  padding: 100px 0px;
+}
+
+.Hero-card h3 {
+  color: #FF9900;
+}
+
+.Hero-card p {
+  width: 80%;
+  font-size: 14px;
+}
+
+.Hero-card .gap-md-3::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: #FF9900;
+  left: 0px;
+  visibility: hidden;
+}
+
+.Hero-card .gap-md-3:hover::before {
+  visibility: visible;
+}
+
+/* ========= End of 1.3. Hero Cards section ======== */
+/* ========= 1.4. Services section ======== */
+.Services {
+  padding: 100px 0px;
+  background: #141414;
+  color: #ffff;
+}
+
+.Services h2 {
+  width: 87%;
+  text-transform: capitalize;
+}
+
+.Services h2 span {
+  color: #FF9900;
+}
+
+.Services .gap-lg-3 p {
+  width: 91%;
+}
+
+.Services .gap-2.text-center {
+  color: #9E9E9E;
+  padding: 18px 0px 0px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Services .gap-2.text-center::after {
+  content: "";
+  width: 100%;
+  background: #9E9E9E;
+  height: 3px;
+  bottom: 0px;
+}
+
+.Services figure {
+  width: fit-content;
+}
+
+.Services img {
+  filter: brightness(0.6);
+  width: 65px;
+}
+
+.Services h3 {
+  width: 48%;
+}
+
+.Services .gap-sm-5 p,
+.Services.my-auto .col-lg-4 p {
+  padding: 0px 0px 10px;
+  font-size: 14px;
+  width: 78%;
+}
+
+.Services .gap-2.text-center:hover {
+  background: #2D2D2D;
+  color: #ffffff;
+}
+
+.Services .gap-2.text-center:hover img {
+  filter: brightness(1);
+}
+
+.Services .gap-2.text-center:hover::after {
+  background: #FF9900;
+}
+
+/* ========= End of 1.4. Services section ======== */
+/* =========  1.5. About Us section ======== */
+.About {
+  padding: 100px 0px 145px;
+}
+
+.About figure {
+  width: fit-content;
+}
+
+.About .position-absolute {
+  bottom: -45px;
+  left: 40px;
+  z-index: 999;
+}
+
+.About h2 {
+  text-transform: capitalize;
+}
+
+.About p {
+  width: 89%;
+}
+
+.About li {
+  line-height: 28px;
+  list-style: disc;
+}
+
+.About a {
+  border: 1px solid #141414
+}
+
+/* ========= End of 1.5. About Us section ======== */
+/* ======== 1.6 Our Commitment section ========  */
+.Commitment {
+  padding: 0px 0px 100px;
+}
+
+.Commitment.m-auto {
+  padding: 100px 0px 0px;
+}
+
+.Commitment span {
+  font-size: 35px;
+  line-height: 54px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #FF9900;
+  width: fit-content;
+  z-index: 999;
+}
+
+.Commitment .d-flex .position-relative {
+  left: -55px;
+}
+
+.Commitment figure {
+  width: fit-content;
+}
+
+.Commitment .position-absolute {
+  width: 495px;
+  right: 105px;
+  bottom: 14%;
+  background-color: #ffff;
+  padding: 12px 0 21px 42px;
+}
+
+.Commitment .nav-tabs {
+  border: none;
+}
+
+.Commitment .nav-tabs::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #141414;
+}
+
+.Commitment .tab-content {
+  padding: 30px 16px 0px;
+  color: #141414;
+}
+
+.Commitment .tab-content li {
+  width: 91%;
+}
+
+.Commitment .nav-link {
+  color: #141414;
+  padding: 18px 36px 14px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 0px;
+  border: 0px;
+  border-right: 1px solid #ffff;
+}
+
+.Commitment .nav-link.active,
+.Commitment .nav-link:hover {
+  background-color: #141414;
+  color: #ffff;
+}
+
+.Commitment .tab-pane ul {
+  list-style: disc;
+}
+
+/* ======== End of 1.6 Our Commitment section ========  */
+/* ======== 1.7 Project section ======== */
+.Projects {
+  padding: 100px 0px;
+  background-color: #141414;
+  color: #ffff;
+}
+
+.Projects h2 {
+  width: 94%;
+  text-transform: capitalize;
+}
+
+.Projects h2 span {
+  color: #FF9900;
+}
+
+.Projects p {
+  width: 75%;
+}
+
+.Projects i {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.Projects .position-absolute {
+  top: 0px;
+  background: #00000080;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.Projects .position-relative:hover .position-absolute {
+  opacity: 1;
+}
+
+/* ======== End of 1.7 Project section ======== */
+/* ======== 1.8. Experience section ======== */
+.Experience {
+  padding: 100px 0px;
+}
+
+.Experience h2 {
+  text-transform: capitalize;
+}
+
+.Experience p {
+  width: 66%;
+}
+
+.Experience .gap-1 {
+  background: #1414141A;
+  padding: 32px 10px;
+}
+
+.Experience .gap-1::after {
+  content: "";
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  background-color: #141414;
+  bottom: 0px;
+}
+
+/* ======== End of 1.8. Experience section ======== */
+/* ======== 1.9. FAQ's section ======== */
+.Faq {
+  padding: 0px 0px 256px;
+}
+
+.Faq h2 {
+  text-transform: capitalize;
+}
+
+.Faq .accordion-button::after {
+  width: 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3Cpath fill='black' d='M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+  color: #141414;
+  filter: brightness(0);
+}
+
+.Faq .accordion-button:not(.collapsed)::after {
+  transition: 0.3s ease-in-out;
+}
+
+.Faq .accordion-button:focus,
+.accordion-button[aria-expanded="true"] {
+  box-shadow: none;
+}
+
+.Faq .accordion-button:not(.collapsed),
+.Faq .accordion-button {
+  color: #141414;
+  background-color: transparent;
+}
+
+.Faq .accordion-button {
+  font-weight: 400;
+  border: none;
+  padding: 18px 15px;
+}
+
+.Faq .accordion-button-active-bg {
+  border: none;
+}
+
+.Faq .accordion-item {
+  border: none;
+  border-bottom: 1px solid #141414;
+  border-radius: 0px;
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.Faq .accordion-body {
+  padding: 0px 48px 18px 15px;
+}
+
+.Faq figure {
+  width: fit-content;
+}
+
+.Faq figure.position-relative {
+  left: 22%;
+  top: 30px;
+}
+
+.Faq .position-absolute {
+  bottom: -156px;
+  right: 0px;
+}
+
+.Faq img[alt="faq-1"] {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 77%, 80% 77%, 19% 77%, 0 100%, 0 64%);
+}
+
+.Faq img[alt="faq-2"] {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 77%, 18% 77%, 0 77%, 0 93%);
+}
+
+/* ======== End of 1.9. FAQ's section ======== */
+/* ======== 1.10. Build section ======== */
+.Build {
+  background-image: url("../images/bg/build-1.webp");
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 100px 0px;
+  color: #ffff;
+}
+
+.Build h2 {
+  text-transform: capitalize;
+}
+
+.Build span {
+  color: #FF9900;
+}
+
+.Build p {
+  width: 41%;
+}
+
+.Build .hover1 {
+  color: #141414;
+  padding: 14px 30px;
+  width: fit-content;
+}
+
+.Build .gap-sm-4 a:nth-child(2) {
+  padding: 14px 30px;
+  background-color: #2D2D2D;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+
+.Build .gap-sm-4 a:nth-child(2):hover {
+  color: #141414;
+  background-color: #ffff;
+}
+
+/* ======== End of 1.10. Build section ======== */
+/* ======== 1.11. Testimonials section ======== */
+.Testimonials {
+  padding: 100px 0px 200px;
+}
+
+.Testimonials h2 {
+  text-transform: capitalize;
+}
+
+.Testimonials .gap-lg-4 p {
+  width: 71%;
+}
+
+.Testimonials img {
+  object-fit: cover;
+}
+
+.Testimonials span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.Testimonials .flex-sm-row p {
+  font-size: 14px;
+  width: 83%;
+}
+
+.Testimonials i {
+  color: #FF9900;
+}
+
+.Testimonials .row .gap-2 {
+  font-weight: 400;
+}
+
+.Testimonials .slick-prev::before {
+  content: "\f060";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+  color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 178px;
+  left: 526px;
+  border: 1px solid #141414;
+  border-radius: 0px;
+}
+
+.Testimonials .slick-next::before {
+  content: "\f061";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 20px;
+  color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  position: absolute;
+  top: 178px;
+  right: 526px;
+  border: 1px solid #141414;
+  border-radius: 0px;
+}
+
+.Testimonials .slick-next:hover::before,
+.Testimonials .slick-prev:hover::before {
+  color: #ffff;
+  background-color: #141414;
+}
+
+/* ======== End of 1.11. Testimonials section ======== */
+/* ======== 1.12. Partners section ======== */
+.Partners {
+  padding: 100px 0px;
+  background-color: #141414;
+}
+
+.Partners .slick-track {
+  align-items: center;
+  gap: 20px;
+}
+
+.Partners figure {
+  width: fit-content !important;
+}
+
+.Partners img[alt="partnerslogo-1"] {
+  width: 184px;
+}
+
+.Partners img[alt="partnerslogo-2"] {
+  width: 179px;
+}
+
+.Partners img[alt="partnerslogo-3"] {
+  width: 185px;
+}
+
+.Partners img[alt="partnerslogo-4"] {
+  width: 204px;
+}
+
+.Partners img[alt="partnerslogo-5"] {
+  width: 125px;
+}
+
+/* ======== End of 1.12. Partners section ======== */
+/* ======== 1.13. Our Team section ======== */
+.Team {
+  padding: 100px 0px;
+}
+
+.Team h2 {
+  text-transform: capitalize;
+}
+
+.Team p {
+  width: 71%;
+}
+
+.Team .row .gap-4 {
+  padding: 0px 0px 20px;
+  box-shadow: 12px 12px 24px 0px #0000001F;
+  height: 375px;
+}
+
+.Team i {
+  color: #141414;
+  font-size: 20px;
+}
+
+.Team .position-relative {
+  transition: all 0.3s ease-in-out;
+}
+
+.Team .position-relative .gap-2 {
+  z-index: 2;
+}
+
+.Team .position-absolute {
+  right: -100px;
+  top: 40px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Team .position-absolute a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ffff;
+  transition: all 0.2s ease-in-out;
+}
+
+.Team .position-absolute a:hover {
+  background-color: #FF9900;
+}
+
+.Team .position-relative:hover {
+  background-color: #141414;
+  color: #ffff;
+  z-index: 3;
+}
+
+.Team .position-relative:hover .position-absolute {
+  right: 20px;
+  z-index: 2;
+}
+
+.Team figure::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  z-index: 100000;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+
+.Team .position-relative:hover figure::before {
+  opacity: 1;
+}
+
+.Team.my-auto p {
+  width: 66%;
+}
+
+/* ======== End of 1.13. Our Team section ======== */
+/* ======== 1.14. Blogs section ======== */
+.Blogs {
+  padding: 0px 0px 100px;
+}
+
+.Blogs .pb-2 p {
+  width: 59%;
+}
+
+.Blogs .col-md-4 span,
+.Blogs .col-md-4 .row p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.Blogs .justify-content-between {
+  border-bottom: 1px solid #141414;
+  border-top: 1px solid #141414;
+  padding: 10px 24px 10px 0px;
+
+}
+
+.Blogs a {
+  color: #141414;
+  width: fit-content;
+}
+
+.Blogs a,
+.Blogs a i {
+  transition: all 0.3s ease-in-out;
+}
+
+.Blogs a:hover,
+.Blogs a:hover i {
+  color: #FF9900;
+}
+
+.Blogs a:hover i {
+  padding: 0px 0px 0px 8px;
+}
+
+/* ======== End of 1.14. Blogs section ======== */
+/* ======== 1.15. Footer section ======== */
+footer {
+  background-color: #141414;
+  padding: 22px 0px 30px;
+  color: #ffff;
+}
+
+footer.mx-auto {
+  margin: 100px 0px 0px;
+}
+
+footer figure {
+  width: fit-content;
+}
+
+footer img {
+  width: 181px;
+}
+
+footer .flex-row.gap-3 a {
+  background-color: #FF9900;
+  color: #141414;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+footer .flex-row.gap-3 a:hover {
+  background-color: #ffff;
+}
+
+footer .nav-link {
+  color: #ffff;
+  transition: all 0.3s ease-in-out;
+}
+
+footer menu li {
+  border-right: 4px solid #FF9900;
+  padding: 0px 14px;
+}
+
+footer menu li:last-child {
+  border-right: none;
+}
+
+footer menu .nav-link:hover {
+  color: #FF9900;
+}
+
+footer p {
+  width: 56%;
+}
+
+footer .justify-content-between {
+  width: 66%;
+}
+
+footer input[type="email"] {
+  padding: 9px 40px 9px 8px;
+  margin: 0px -1px 0px 0px;
+  color: #2D2D2D;
+  font-size: 14px;
+}
+
+footer input[type="email"]::placeholder {
+  color: #2D2D2D;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer .hover1 {
+  padding: 8px 16px;
+  border: 1px solid #FF9900;
+}
+
+.Copyright {
+  background-color: #FF9900;
+  padding: 18px 0px;
+}
+
+.Copyright .my-auto {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, #141414, transparent);
+}
+
+.Copyright p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Copyright span {
+  font-weight: 500;
+}
+
+/* ======== End of 1.15. Footer section ======== */
+/* ======== 2.2. About US Hero section ======== */
+.subpage-Hero {
+  background-image: url("../images/bg/about-us.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 128px 0px;
+  color: #ffff;
+}
+
+.subpage-Hero span {
+  color: #FF9900;
+}
+
+/* ======== End of 2.2. Subpages Hero section ======== */
+/* ======== 2.5. Our Story section ======== */
+.Our-story {
+  padding: 100px 0px;
+}
+
+.Our-story h2 {
+  width: 61%;
+}
+
+.Our-story p {
+  width: 70%;
+}
+
+/* ======== End of 2.5. Our Story section ======== */
+/* ======== 2.6. Choose Us section ======== */
+.Choose-us {
+  padding: 100px 0px;
+  color: #ffff;
+  background-color: #141414;
+}
+
+.Choose-us h2 span {
+  color: #FF9900;
+}
+
+.Choose-us h2 {
+  width: 95%;
+  text-transform: capitalize;
+}
+
+.Choose-us .pb-1 p {
+  width: 66%;
+}
+
+.Choose-us .accordion-item {
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0px;
+  background: transparent;
+  position: relative;
+  padding: 0px 0px 0px 65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.Choose-us .accordion-number {
+  position: absolute;
+  left: 18px;
+  top: 19px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  border-bottom: 1px solid #979595;
+}
+
+.Choose-us .accordion-button {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  padding: 16px 15px;
+}
+
+.Choose-us .accordion-body {
+  padding: 4px 20px 22px 16px;
+}
+
+.Choose-us .accordion-body p {
+  width: 83%;
+}
+
+.Choose-us .accordion-button::after {
+  width: 8px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="%23ffffff" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.Choose-us .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+
+.Choose-us .accordion-button:focus {
+  box-shadow: none;
+}
+
+.Choose-us .accordion-item:hover {
+  background-color: #2D2D2D;
+}
+
+.Choose-us .accordion-item:hover p {
+  color: #9E9E9E;
+}
+
+/* ======== End of 2.6. Choose Us section ======== */
+/* ======== 3.2. Contact Us Hero section ======== */
+.subpage-Hero.Contact {
+  background-image: url("../images/bg/contact.webp");
+}
+
+/* ======== End of 3.2. Contact Us Hero section ======== */
+/* ======== 3.3. Contact Us section ======== */
+.Contact-us {
+  padding: 100px 0px;
+}
+
+.Contact-us h2 {
+  width: 73%;
+}
+
+.Contact-us p {
+  width: 85%;
+}
+
+.Contact-us img {
+  object-fit: cover;
+}
+
+.Contact-us input,
+.Contact-us select {
+  width: 222px;
+  padding: 14px 10px;
+  margin: 0px 0px 10px;
+  border: 1px solid #9E9E9E;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Contact-us select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: white;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="%23000000" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 8px;
+  padding: 15px 30px 15px 10px;
+}
+
+.Contact-us textarea {
+  height: 111px;
+  resize: none;
+  margin: 0px 0px 16px;
+  padding: 12px 10px;
+  outline: none;
+  border: 1px solid #9E9E9E;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Contact-us input::placeholder,
+.Contact-us select,
+.Contact-us textarea::placeholder {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Contact-us form button {
+  width: 100%;
+}
+
+/* ======== End of 3.3. Contact Us section ======== */
+/* ======== 3.4. Contact Us section ======== */
+.Find-us {
+  background: #141414;
+  color: #ffff;
+  padding: 100px 0px;
+}
+
+.Find-us h2 {
+  width: 87%;
+  text-transform: capitalize;
+}
+
+.Find-us p {
+  width: 83%;
+}
+
+.Find-us .gap-xl-5 .gap-3:nth-child(1) {
+  padding: 16px 22px;
+  background-color: #2D2D2D;
+  position: relative;
+}
+
+.Find-us .gap-xl-5 .gap-3:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #9E9E9E;
+  bottom: 0px;
+  left: 0px;
+}
+
+.Find-us .pt-1 a {
+  color: #9E9E9E;
+  transition: all 0.3s ease-in-out;
+}
+
+.Find-us .pt-1 a span {
+  font-size: 14px;
+}
+
+.Find-us .pt-1 a:hover {
+  color: #FF9900;
+}
+
+.Find-us iframe {
+  width: 260px;
+  height: 100%;
+}
+
+/* ======== End of 3.4. Contact Us section ======== */
+/* ======== 4.2. Blog Hero section ======== */
+.blog-hero {
+  background-image: url("../images/bg/blog-bg-1.webp");
+}
+
+/* ======== End of 4.2. Blog Hero section ======== */
+/* ======== 4.3. Blogs section ======== */
+.Blogs.my-auto {
+  padding: 100px 0px;
+}
+
+.Blogs.my-auto .pb-md-2 p {
+  width: 75%;
+}
+
+.Blogs.my-auto .col-xl-7 .justify-content-between {
+  padding: 20px 3px 20px 0px;
+}
+
+.Blogs.my-auto h2 {
+  width: 94%;
+}
+
+.Blogs.my-auto .col-xl-5 p {
+  width: 83%;
+  font-weight: 400;
+}
+
+/* ======== End of 4.3. Blogs section ======== */
+/* ======== 5.2. Services Hero section ======== */
+.service-hero {
+  background-image: url("../images/bg/service-bg-1.webp");
+}
+
+/* ======== 5.2. Services Hero section ======== */
+/* ======== 5.3. Services section ========  */
+.Services.my-auto {
+  background-color: #ffff;
+  color: #141414;
+}
+
+.Services.my-auto .gap-lg-4 {
+  padding: 0px 0px 60px;
+}
+
+.Services.my-auto .gap-lg-3 p {
+  width: 66%;
+}
+
+.Services.my-auto .service-number-container div {
+  color: #141414 !important;
+}
+
+.Services.my-auto img {
+  filter: brightness(0);
+}
+
+.Services.my-auto .gap-2.text-center {
+  color: #2D2D2D;
+}
+
+.Services.my-auto .gap-2.text-center:hover {
+  color: #ffffff;
+}
+
+.Services.my-auto h3 {
+  width: 45%;
+}
+
+.Services.my-auto .col-lg-4 p {
+  width: 73%;
+}
+
+/* ======== End of 5.3. Services section ========  */
+/* ======== 6.2. Single Services Hero section ======== */
+.Single-hero {
+  background-image: url("../images/bg/single-services-bg-1.webp");
+}
+
+/* ======== End of 6.2. Single services Hero section ======== */
+/* ======== 6.3. Single Services section ======== */
+.Single-service {
+  padding: 100px 0px 30px;
+}
+
+.Single-service figure {
+  width: fit-content;
+}
+
+.Single-service .col-lg-7 p {
+  width: 94%;
+}
+
+.Single-service .col-lg-5 figure {
+  padding: 37px;
+  background-color: #2D2D2D;
+}
+
+.Single-service .col-lg-5 img {
+  width: 65px;
+}
+
+.Single-service h6 {
+  width: fit-content;
+}
+
+.Single-service h6::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #141414;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.Single-service .gap-lg-4 p {
+  width: 78%;
+}
+
+.Single-service a {
+  color: #FF9900;
+  width: fit-content;
+}
+
+.Single-service a,
+.Single-service a i {
+  transition: all 0.3s ease-in-out;
+}
+
+.Single-service a:hover i {
+  padding: 0px 0px 0px 8px;
+}
+
+.Single-service .hover3 {
+  color: #141414;
+}
+
+.Single-service .hover3:hover {
+  color: #ffff;
+}
+
+/* ======== End of 6.3. Single Services section ======== */
+/* ======== 6.4. You will Get section ========  */
+.You-get {
+  padding: 0px 0px 100px;
+}
+
+.You-get i {
+  font-size: 30px;
+}
+
+.You-get .position-relative {
+  padding: 76px 0px 0px 30px;
+}
+
+.You-get h3 {
+  width: 66%;
+}
+
+.You-get h3::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 72px;
+  background-color: #FF9900;
+  bottom: 0px;
+  left: 0px;
+}
+
+/* ======== End of 6.4. You will Get section ========  */
+/* ======== 7.2. FAQ's Hero section ======== */
+.faq-hero {
+  background-image: url("../images/bg/faq-bg-1.webp");
+}
+
+/* ======== End of 7.2. FAQ's Hero section ======== */
+/* ======== 7.3. FAQ's section ======== */
+.Faq.my-auto {
+  padding: 100px 0px 0px;
+}
+
+.Faq.my-auto .position-absolute {
+  top: 0px;
+  right: 60px;
+}
+
+.Faq.my-auto figure {
+  width: fit-content;
+}
+
+.Faq.my-auto img {
+  width: 105px;
+}
+
+.Faq.my-auto .accordion {
+  width: 90%;
+}
+
+.Faq.my-auto .accordion-item p {
+  width: 88%;
+}
+
+/* ======== End of 7.3. FAQ's section ======== */
+/* ======== 8.2. About-Us Hero section ========  */
+.subpage-Hero.testimonial {
+  background-image: url("../images/bg/testimonial-bg-1.webp");
+}
+
+/* ======== End of 8.2. About-Us Hero section ========  */
+/* ======== 8.4. Feedback section ======== */
+.Feedback {
+  padding: 0px 0px 100px;
+}
+
+.Feedback h2 {
+  width: 98%;
+  text-transform: capitalize;
+}
+
+.Feedback textarea {
+  width: 87%;
+  height: 130px;
+  resize: none;
+  border: 1px solid #9E9E9E;
+  padding: 20px 24px;
+  outline: none;
+  font-size: 14px;
+}
+
+.Feedback textarea::placeholder {
+  font-size: 14px;
+  color: #141414;
+}
+
+.Feedback form button {
+  width: 87%;
+}
+
+.Feedback.my-auto h2 {
+  width: 90%;
+}
+
+/* ======== End of 8.4. Feedback section ======== */
+/* ======== 9.2. Projects-Hero section ======== */
+.projects-hero {
+  background-image: url("../images/bg/projects-bg.webp");
+}
+
+/* ======== End of 9.2. Projects-Hero section ======== */
+/* ======== 9.3. Project section ======== */
+.Projects.my-auto {
+  background-color: #ffffff;
+  color: #141414;
+}
+
+.Projects.my-auto .gap-lg-4 {
+  padding: 0px 0px 60px;
+}
+
+.Projects.my-auto h2 {
+  width: 78%;
+}
+
+.Projects.my-auto .row p {
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  font-size: 14px;
+}
+
+.Projects.my-auto .align-items-center {
+  padding: 60px 0px 0px;
+}
+
+/* ======== End of 9.3. Project section ======== */
+/* ======== 10.2. Team Hero section ======== */
+.subpage-Hero.team {
+  background-image: url("../images/bg/team-bg-1.webp");
+}
+
+/* ======== End of 10.2. Team Hero section ======== */
+/* ======== 11.1. Error 404 section ======== */
+.Error {
+  padding: 110px 0px;
+  height: 100vh;
+}
+
+.Error h1.position-relative {
+  bottom: -60px;
+}
+
+.Error .text-center {
+  gap: 42px;
+}
+
+.Error h1 {
+  font-size: 300px;
+  line-height: 225px;
+  color: transparent;
+  -webkit-text-stroke: 1px #FF9900;
+  z-index: 999;
+}
+
+.Error p {
+  width: 66%;
+}
+
+.Error .hover1 {
+  padding: 12px 37px;
+}
+
+/* ======== End of 11.1. Error 404 section ======== */
+/* ======== 12.1. Coming Soon section ======== */
+.Coming-soon.Error h1 {
+  font-size: 160px;
+  line-height: 168px;
+}
+
+/* ======== End of 12.1. Coming Soon section ======== */

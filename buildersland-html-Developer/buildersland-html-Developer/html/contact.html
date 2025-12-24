@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Builder's Land</title>
+  <!-- favicon  -->
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+  <!-- faremwork of css -->
+  <link rel="stylesheet" href="assets/css/bootstrap-lib/bootstrap.min.css">
+  <!-- style sheet of css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Responsive sheet of css -->
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!-- fonts awsome icon link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- animation of css -->
+  <link rel="stylesheet" href="assets/css/aos.css">
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <!-- ======== 3.1. Header section ======== -->
+    <header>
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid justify-content-lg-start justify-content-between">
+          <!-- site logo -->
+          <a href="index.html" class="nav-logo p-0">
+            <figure class="w-100 mb-lg-4">
+              <img src="assets/images/logo.svg" alt="logo">
+            </figure>
+          </a>
+          <!-- navigation button  -->
+          <div class="d-flex gap-4 flex-row-reverse">
+            <div class="d-lg-none d-block">
+              <button class="menu-icon d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <!-- navigation bar manu  -->
+            <div class="d-flex align-items-center justify-content-end gap-lg-5 w-100">
+              <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="projects.html" class="nav-link">Projects</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="nav-link d-flex gap-1">More<i class="fa-solid fa-angle-down"></i></a>
+
+                    <ul class="dropdown-menu d-flex flex-column gap-3">
+                      <li>
+                        <a href="blog.html" class="dropdown-item">News and Blogs</a>
+                      </li>
+                      <li>
+                        <a href="single-service.html" class="dropdown-item">Single Service</a>
+                      </li>
+                      <li>
+                        <a href="faq.html" class="dropdown-item">FAQ's</a>
+                      </li>
+                      <li>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                      </li>
+                      <li>
+                        <a href="contact.html" class="dropdown-item active">Contact Us</a>
+                      </li>
+                      <li>
+                        <a href="team.html" class="dropdown-item">Team</a>
+                      </li>
+                      <li>
+                        <a href="error.html" class="dropdown-item">404</a>
+                      </li>
+                      <li>
+                        <a href="comingSoon.html" class="dropdown-item">Coming Soon</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="d-flex align-items-center justify-content-end gap-3">
+                <div class="search SearchModal" id="SearchModal">
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </div>
+                <hr class="d-lg-block d-none">
+                <div class="d-lg-flex flex-row gap-3 d-none">
+                  <a href="#">
+                    <i class="fa-brands fa-square-behance"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-square-facebook"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-square-instagram"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal searchModal w-100 h-100 position-fixed justify-content-center align-items-center">
+          <button class="close-btn d-flex position-absolute" id="closeSearchModal">
+            &times;
+          </button>
+          <div class="position-relative d-flex align-items-center justify-content-cente w-50">
+            <input type="text" placeholder="Search..." name="search" class="w-100">
+            <button class="search-btn d-flex align-items-center justify-content-end position-absolute">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!--===== aside navigation slidebar 1 =====-->
+      <aside>
+        <div id="menuBar" class="menu-bar d-lg-none d-block position-fixed h-100 pt-3">
+          <button class="close-icon d-flex align-items-center justify-content-center" onclick="toggleMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div>
+            <ul class="menu-bar flex-column justify-content-start align-items-start gap-1 pt-4">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="services.html" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="projects.html" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="testimonial.html" class="nav-link">Testimonials</a>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="nav-link d-flex gap-1">More<i class="fa-solid fa-angle-down"></i></a>
+
+                <ul class="dropdown-menu d-flex flex-column gap-2">
+                  <li>
+                    <a href="blog.html" class="dropdown-item">News and Blogs</a>
+                  </li>
+                  <li>
+                    <a href="single-service.html" class="dropdown-item">Single Service</a>
+                  </li>
+                  <li>
+                    <a href="faq.html" class="dropdown-item">FAQ's</a>
+                  </li>
+                  <li>
+                    <a href="team.html" class="dropdown-item">Team</a>
+                  </li>
+                  <li>
+                    <a href="error.html" class="dropdown-item">404</a>
+                  </li>
+                  <li>
+                    <a href="comingSoon.html" class="dropdown-item">Coming Soon</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+    </header>
+    <!-- ======== End of 3.1. Header section ======== -->
+    <!-- ======== 3.2. Contact-US Hero section ======== -->
+    <section class="subpage-Hero Contact">
+      <div class="container">
+        <div data-aos="zoom-in" class="d-flex flex-column align-items-center text-center">
+          <h1>Contact <span>Us</span></h1>
+          <h6>HOME/CONTACT US</h6>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of 3.2. Contact-Us Hero section ======== -->
+    <!-- ======== 3.3. Contact Us section ======== -->
+    <section class="Contact-us">
+      <div class="container">
+        <div data-aos="fade" class="d-flex flex-column gap-lg-4 gap-3 pb-4">
+          <h5 class="mini-heading">Contact Us</h5>
+          <div class="d-flex flex-column gap-lg-3 gap-2 py-1">
+            <h2>
+              We'd love to hear from you! Get in touch with us today to
+              discuss your construction needs.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Odio sit a ornare
+              pharetra at neque vulputate. Amet sed netus libero leo. Neque
+              elementum elementum feugiat euismod hendrerit vulputate nisl
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="row gy-md-0 gy-4">
+          <div class="col-md-6">
+            <figure data-aos="zoom-in-up" class="w-100 h-100">
+              <img src="assets/images/contact-us/contact-us.webp" alt="contact-us" class="w-100 h-100">
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <div data-aos="fade-down" class="d-flex align-items-end justify-content-center h-100">
+              <form class="ContactForm" id="ContactForm">
+                <div class="d-flex flex-column gap-xl-5 gap-4">
+                  <div class="d-flex flex-column gap-md-4 gap-3">
+                    <div class="d-flex flex-md-row flex-column gap-xl-5 gap-lg-4 gap-3">
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="userName">Name:</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter your full name" required>
+                      </div>
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-md-row flex-column gap-xl-5 gap-lg-4 gap-3">
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" pattern="^03[0-9]{9}$" maxlength="11"
+                          placeholder="Enter your number" required>
+                      </div>
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="services">Select Service:</label>
+                        <select id="services" required>
+                          <option value="" disabled selected>
+                            Choose service
+                          </option>
+                          <option value="construction-service">
+                            Construction Services
+                          </option>
+                          <option value="architectural-design">
+                            Architectural Design
+                          </option>
+                          <option value="Interior-designing">
+                            Interior Designing
+                          </option>
+                          <option value="real-esate-consultation">
+                            Real Estate Consultation
+                          </option>
+                          <option value="property-valuation">
+                            Property Valuation
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column gap-sm-3 gap-2">
+                      <label for="message">Your Message:</label>
+                      <textarea id="message" placeholder="Write here...." required></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="hover4" id="open-ContactModal">Send</button>
+                </div>
+              </form>
+              <div id="ContactModal">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <figure>
+                    <img src="assets/images/icons/form-submit-gif.gif" alt="form-gif" class="w-100">
+                  </figure>
+                  <h2>Details Submitted!</h2>
+                  <p class="pt-3 pb-5 px-5 text-center w-100">
+                    Thank you, <span id="userNameDisplay"></span>! Your
+                    message has been sent.
+                  </p>
+                  <button id="dismiss-ContactModal" class="hover1">
+                    Dismiss
+                  </button>
+                </div>
+              </div>
+              <div class="modal-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of 3.3. Contact Us section ======== -->
+    <!-- ======== End of 3.4. Find Us section ======== -->
+    <section class="Find-us">
+      <div class="container">
+        <div data-aos="fade-down" class="pb-lg-4 pb-3">
+          <h5 class="mini-heading">Find Us Here</h5>
+        </div>
+        <div class="row gy-lg-0 gy-md-5 gy-4">
+          <div class="col-lg-6">
+            <div data-aos="fade-down" class="d-flex flex-column gap-4 pb-md-0 pb-2">
+              <div class="d-flex flex-column gap-lg-3 gap-2 py-lg-1">
+                <h2>
+                  We're just a Click away! Reach out to us today to schedule a
+                  consultation And to learn more.
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Pellen tesque proin
+                  pretium amet id duis. Urna scelerisquer. Pellen tesque proin
+                  pretium amet id duis. Urna scelerisque.
+                </p>
+              </div>
+              <a href="contact.html" class="hover2">Contact Us</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div data-aos="fade-up" class="d-flex flex-column gap-xl-5 gap-4">
+              <div class="d-flex flex-sm-row flex-column gap-xl-5 gap-4">
+                <div class="d-flex flex-column gap-3">
+                  <h6>Head Office</h6>
+                  <div class="d-flex flex-column gap-3 pt-1 w-100">
+                    <a href="https://www.google.com/maps/place/Evonicsoft+Pvt.+Ltd/@31.501799,74.36413,17z/data=!4m6!3m5!1s0x391905620625afd7:0x658853a03e8e9afe!8m2!3d31.5017986!4d74.3641296!16s%2Fg%2F11s0zr_j5n?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D"
+                      class="d-flex flex-row align-items-center gap-2">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plaza X, XY Floor, Street, XYZ</span>
+                    </a>
+                    <a href="contact.html" class="d-flex flex-row align-items-center gap-2">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>+123 456 7890</span>
+                    </a>
+                    <a href="contact.html" class="d-flex flex-row align-items-center gap-2">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>Yourname@email.com</span>
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <iframe
+                    src="https://maps.google.com/maps?width=100%25&height=550&hl=en&q=Evonicsoft%20Pvt.%20Ltd,%202nd%20Floor,%20Evonicsoft%20(Pvt)%20Ltd,%20Commercial%20Area%20Cavalry%20Ground,%20Plaza%2059,%20Extension%20Cavalry%20Ground,%20Lahore,%20Punjab%2054000+(Evonicsoft)&t=&z=17&ie=UTF8&iwloc=B&output=embed">
+                  </iframe>
+                </div>
+              </div>
+              <div class="d-flex flex-sm-row flex-column gap-xl-5 gap-4">
+                <div class="d-flex flex-column gap-3">
+                  <h6>Second Office</h6>
+                  <div class="d-flex flex-column gap-3 pt-1 w-100">
+                    <a href="https://www.google.com/maps/place/Evonicsoft+Pvt.+Ltd/@31.501799,74.36413,17z/data=!4m6!3m5!1s0x391905620625afd7:0x658853a03e8e9afe!8m2!3d31.5017986!4d74.3641296!16s%2Fg%2F11s0zr_j5n?hl=en&entry=ttu&g_ep=EgoyMDI1MDQwNi4wIKXMDSoASAFQAw%3D%3D"
+                      class="d-flex flex-row align-items-center gap-2">
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>Plaza X, XY Floor, Street, XYZ</span>
+                    </a>
+                    <a href="contact.html" class="d-flex flex-row align-items-center gap-2">
+                      <i class="fa-solid fa-phone"></i>
+                      <span>+123 456 7890</span>
+                    </a>
+                    <a href="contact.html" class="d-flex flex-row align-items-center gap-2">
+                      <i class="fa-solid fa-envelope"></i>
+                      <span>Yourname@email.com</span>
+                    </a>
+                  </div>
+                </div>
+                <div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.4140225300866!2d71.70736257503631!3d29.387442149400872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x827dcbdfcb9aef2d%3A0xe712993641b9e084!2sEvonicsoft%20Pvt.%20Ltd!5e0!3m2!1sen!2s!4v1742884754457!5m2!1sen!2s"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of 3.4. Find Us section ======== -->
+    <hr class="m-0">
+    <!-- ======== 3.5. Footer section ======== -->
+    <footer>
+      <div class="container">
+        <div class="d-flex flex-column align-items-center gap-md-4 gap-3">
+          <figure>
+            <img src="assets/images/footer-logo.svg" alt="footer-logo">
+          </figure>
+          <div class="d-flex flex-row gap-3 py-2">
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="#" class="d-flex align-items-center justify-content-center">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+          </div>
+          <ul class="d-flex flex-md-row flex-column flex-wrap justify-content-center align-items-center">
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">Terms and Conditions</a>
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link">Faqs</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center justify-content-between">
+            <p>Lorem ipsum dolor sit amet consectr tesque proin pretium amet id duis. Urna scelerisque.</p>
+            <form class="d-flex flex-row align-items-center" id="footerForm">
+              <input type="email" name="email" id="mail" placeholder="enter your email" required>
+              <button type="submit" class="hover1" id="open-footerModal">Subscribe</button>
+            </form>
+            <div id="footerModal">
+              <div class="d-flex flex-column align-items-center text-center">
+                <figure>
+                  <img src="assets/images/icons/form-submit-gif.gif" alt="form-gif" class="w-100">
+                </figure>
+                <h2>Details Submitted!</h2>
+                <p class="pt-3 pb-5 px-5 text-center w-100">
+                  Thank you for subscribing to our newsletter.
+                </p>
+                <button id="dismiss-footerModal" class="hover1">
+                  Dismiss
+                </button>
+              </div>
+            </div>
+            <div class="modal-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="Copyright">
+      <div class="container">
+        <div class="my-auto"></div>
+        <div
+          class="d-flex flex-md-row flex-column align-items-center justify-content-between gap-md-0 gap-1 pt-3 text-md-start text-center">
+          <p>Copyright &copy; 2025 Builder’sLand By Evonicmedia. All Rights Reserved.</p>
+          <p>Powered by <span>Evonicsoft</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- ======== End of 3.5. Footer section ======== -->
+  </div>
+
+  <!-- bootstrap min javascript -->
+<script src="assets/js/javascript-lib/bootstrap.min.js"></script>
+<!-- main javascript -->
+<script src="assets/js/custom.js"></script>
+<!-- animation from javascript -->
+<script src="assets/js/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 1500,
+  });
+</script>
+</body>
+</html>
