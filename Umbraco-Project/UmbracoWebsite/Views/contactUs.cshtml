@@ -1,0 +1,111 @@
+﻿
+@{
+	Layout = "master.cshtml";
+}
+  <section class="subpage-Hero Contact">
+      <div class="container">
+        <div data-aos="zoom-in" class="d-flex flex-column align-items-center text-center">
+          <h1>Contact <span>Us</span></h1>
+          <h6>HOME/CONTACT US</h6>
+        </div>
+      </div>
+    </section>
+    <!-- ======== End of 3.2. Contact-Us Hero section ======== -->
+    <!-- ======== 3.3. Contact Us section ======== -->
+    <section class="Contact-us">
+      <div class="container">
+        <div data-aos="fade" class="d-flex flex-column gap-lg-4 gap-3 pb-4">
+          <h5 class="mini-heading">Contact Us</h5>
+          <div class="d-flex flex-column gap-lg-3 gap-2 py-1">
+            <h2>
+              We'd love to hear from you! Get in touch with us today to
+              discuss your construction needs.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Odio sit a ornare
+              pharetra at neque vulputate. Amet sed netus libero leo. Neque
+              elementum elementum feugiat euismod hendrerit vulputate nisl
+              pretium.
+            </p>
+          </div>
+        </div>
+        <div class="row gy-md-0 gy-4">
+          <div class="col-md-6">
+            <figure data-aos="zoom-in-up" class="w-100 h-100">
+              <img src="/assets/images/contact-us/contact-us.webp" alt="contact-us" class="w-100 h-100">
+            </figure>
+          </div>
+          <div class="col-md-6">
+            <div data-aos="fade-down" class="d-flex align-items-end justify-content-center h-100">
+              <form class="ContactForm" id="ContactForm">
+                <div class="d-flex flex-column gap-xl-5 gap-4">
+                  <div class="d-flex flex-column gap-md-4 gap-3">
+                    <div class="d-flex flex-md-row flex-column gap-xl-5 gap-lg-4 gap-3">
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="userName">Name:</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter your full name" required>
+                      </div>
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-md-row flex-column gap-xl-5 gap-lg-4 gap-3">
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" name="phone" id="phone" pattern="^03[0-9]{9}$" maxlength="11"
+                          placeholder="Enter your number" required>
+                      </div>
+                      <div class="d-flex flex-column gap-sm-3 gap-2">
+                        <label for="services">Select Service:</label>
+                        <select id="services" required>
+                          <option value="" disabled selected>
+                            Choose service
+                          </option>
+                          <option value="construction-service">
+                            Construction Services
+                          </option>
+                          <option value="architectural-design">
+                            Architectural Design
+                          </option>
+                          <option value="Interior-designing">
+                            Interior Designing
+                          </option>
+                          <option value="real-esate-consultation">
+                            Real Estate Consultation
+                          </option>
+                          <option value="property-valuation">
+                            Property Valuation
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column gap-sm-3 gap-2">
+                      <label for="message">Your Message:</label>
+                      <textarea id="message" placeholder="Write here...." required></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="hover4" id="open-ContactModal">Send</button>
+                </div>
+              </form>
+              <div id="ContactModal">
+                <div class="d-flex flex-column align-items-center text-center">
+                  <figure>
+                    <img src="/assets/images/icons/form-submit-gif.gif" alt="form-gif" class="w-100">
+                  </figure>
+                  <h2>Details Submitted!</h2>
+                  <p class="pt-3 pb-5 px-5 text-center w-100">
+                    Thank you, <span id="userNameDisplay"></span>! Your
+                    message has been sent.
+                  </p>
+                  <button id="dismiss-ContactModal" class="hover1">
+                    Dismiss
+                  </button>
+                </div>
+              </div>
+              <div class="modal-overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
